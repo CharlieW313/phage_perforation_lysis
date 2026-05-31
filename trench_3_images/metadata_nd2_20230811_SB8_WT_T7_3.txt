@@ -1,0 +1,50 @@
+nd2 file is 20230811_SB8_WT_T7_3.nd2 
+
+capturing: 
+
+Fusion, SN:000470
+Exposure: 3 ms
+Binning: 1x1
+Scan Mode: Fast
+Temperature: 1.0°C
+
+date: 
+
+11/08/2023  22:19:47
+
+description: 
+
+Metadata:
+Dimensions: T(35096)
+Camera Name: Fusion, SN:000470
+Numerical Aperture: 1.45
+Refractive Index: 1.515
+ Name: PC
+ Component Count: 1
+ Modality: Brightfield
+ Camera Settings:   Exposure: 3 ms
+  Binning: 1x1
+  Scan Mode: Fast
+  Temperature: 1.0°C
+ Microscope Settings:   Microscope: Ti2 Microscope
+  Nikon Ti2, FilterChanger(Turret-Lo): 1 (LED-DA/FI/TR/Cy5-B (DAPI / FITC / TRITC / Cy5 - Full Multiband Quad))
+  Nikon Ti2, FilterChanger(EM Wheel1): 2 (515/30)
+  Nikon Ti2, Shutter(DIA LED): Active
+  Nikon Ti2, Illuminator(DIA): On
+  LightPath: L100
+  PFS, state: On
+  PFS, offset: 161
+  PFS, mirror: Inserted
+  PFS, Dish Type: Glass
+Time Loop: 35096
+- Equidistant (Period 10 ms)
+
+optics: 
+
+Plan Apo λ 100x Oil Ph3 DM
+
+Pixel to micron conversion: 
+x voxel size is 0.065 microns/pixel 
+y voxel size is 0.065 microns/pixel 
+
+The mean temporal frame spacing in the PC channel is 0.01018282972445327s and the coefficient of variation in the frame spacing is 0.04585

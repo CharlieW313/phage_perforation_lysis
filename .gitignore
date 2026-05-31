@@ -1,0 +1,42 @@
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.ipynb
+
+# Jupyter runtime
+.jupyter/
+
+# File formats to exclude
+*.csv
+*.xlsx
+*.docx
+*.pptx
+*.zip
+*.tar.gz
+*.ipynb
+*.json
+*.ijm
+*.sha256
+*.yml
+
+# Image and video formats
+*.zarr
+*.zarr.zip
+*.nd2
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.avi
+*.svg
+*.mp4
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
