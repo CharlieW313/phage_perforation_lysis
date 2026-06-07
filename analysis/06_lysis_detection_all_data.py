@@ -155,5 +155,5 @@ try:
 except:
     pass
 
-cell_envelope_breakdown_analysis.to_csv("dataframes/cell_envelope_breakdown_analysis.csv", index=False, encoding='utf-8-sig')
+cell_envelope_breakdown_analysis.to_csv("dataframes/cell_envelope_breakdown_analysis.csv", index=False, encoding='utf-8')
 

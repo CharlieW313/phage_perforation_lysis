@@ -119,7 +119,7 @@ for c in clean:
     start_times[c] = t
 
 # load the full lysis analysis from '06_lysis_detection_all_data.py'
-envelope_breakdown = pd.read_csv("dataframes/cell_envelope_breakdown_analysis.csv", encoding='utf-8-sig')
+envelope_breakdown = pd.read_csv("dataframes/cell_envelope_breakdown_analysis.csv", encoding='utf-8')
 
 # find the perforation start times  
 slow_lysis = {}
@@ -239,4 +239,4 @@ try:
 except:
     pass
 
-df.to_csv("dataframes/perforation_analysis.csv", index=False, encoding='utf-8-sig')
+df.to_csv("dataframes/perforation_analysis.csv", index=False, encoding='utf-8')
