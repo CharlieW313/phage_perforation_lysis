@@ -20,7 +20,6 @@ import matplotlib.pyplot as plt
 import matplotlib
 import matplotlib.font_manager as font_manager
 import scienceplots
-from matplotlib_scalebar.scalebar import ScaleBar
 
 plt.style.use('nature')
 
@@ -47,10 +46,17 @@ matplotlib.rcParams["savefig.transparent"] = True
 matplotlib.rcParams["savefig.dpi"] = 300
 matplotlib.rcParams["savefig.format"] = "svg"
 
-path = "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf"
-font_manager.fontManager.addfont(path)
-prop = font_manager.FontProperties(fname=path)
-matplotlib.rcParams["font.family"] = prop.get_name()
+# Set the font to Arial, or leave as Nature style
+plot_version = 1
+# if plot_version is 0, plot with Arial (paper publisher guideline)
+if plot_version == 0:
+    # the font path is likely to be different on a different system. 
+    # Set to the Arial.ttf path on your system to plot with Arial font.
+    # If using Windows, the path is likely to be "C:\Windows\Fonts\arial.ttf".
+    path = "/usr/share/fonts/truetype/msttcorefonts/Arial.ttf" 
+    font_manager.fontManager.addfont(path)
+    prop = font_manager.FontProperties(fname=path)
+    matplotlib.rcParams["font.family"] = prop.get_name()
 
 def set_size(w,h, ax=None):
     """ w, h: width, height in inches """
@@ -64,15 +70,14 @@ def set_size(w,h, ax=None):
     ax.figure.set_size_inches(figw, figh)
     
 ### Make a folder to save plots
-plot_version = 1
 try:
     os.mkdir("plots_{}".format(str(plot_version).zfill(2)))
 except:
     pass
 
 ### import data
-sl = pd.read_csv("dataframes/perforation_analysis.csv")
-fl = pd.read_csv("dataframes/cell_envelope_breakdown_analysis.csv")
+sl = pd.read_csv("dataframes/perforation_analysis.csv", encoding='utf-8')
+fl = pd.read_csv("dataframes/cell_envelope_breakdown_analysis.csv", encoding='utf-8')
 
 k = 35
 d = pd.read_csv("lysis_data_time_adjusted/lysis_{}.csv".format(str(k).zfill(2)))

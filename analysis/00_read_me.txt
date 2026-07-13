@@ -16,7 +16,6 @@ st: 'side trench'. This is data from the mask further to the right of the cell a
 *** Data processing and python scripts ***
 The final results of the data processing are in the directory 'dataframes', and how they were obtained is explained in this text file and as more detailed comments in the individual python scripts.
 If you wish to follow through the code and regenerate all the code-produced data in this directory, run the scripts in the directory 'minimal_data' in numerical order.
-If you run into any package version issues, the files 'environment.txt' and 'environment.yml' contain the package versions used to run the code, so that you can see if the relevant package version matches that used by the authors. Note that this is not a minimal environment needed to run the code, and contains other packages which are not relevant. You do not need to install the whole list. 
 
 *** 01_time_adjust_data.py ***
 The true imaging interval was slightly longer than 10 ms. This script scales the time axis for each dataset by the true imaging interval found in the image metadata. It also collates the time series intensity profiles taken in different locations into one csv file for each infection. The results are stored in the directory 'lysis_data_time_adjusted'.
@@ -50,4 +49,4 @@ The output is 'perforation_analysis.csv', stored in the 'dataframes' directory.
 Plot the example time series and perforation violin in figure 5, and the additional perforation time series found in the supplementary information.
 
 *** 10_calculate_stats.py ***
-Calculates descriptive statistics of the final results files, which are stored in the dataframes folder
+Calculates descriptive statistics of the final results files, which are stored in the dataframes folder.

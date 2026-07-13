@@ -1,6 +1,7 @@
 import hashlib
 import os
 import csv
+import fnmatch
 
 def get_sha256(file_path):
     sha256_hash = hashlib.sha256()
@@ -18,9 +19,9 @@ def run_generator(root_folder, output_csv):
         writer = csv.writer(csvfile)
         writer.writerow(['Relative Path', 'SHA256'])
         
-        EXCLUDED_DIRS = {'.git', '__pycache__', '.ipynb_checkpoints'}
+        EXCLUDED_PATTERNS = {'.ipynb_checkpoints', '__pycache__', '.git', 'analysis'}
         for root, dirs, files in os.walk(root_folder):
-            dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS]
+            dirs[:] = [d for d in dirs if not any(fnmatch.fnmatch(d, pattern) for pattern in EXCLUDED_PATTERNS)]
             for file in files:
                 full_path = os.path.join(root, file)
                 rel_path = os.path.relpath(full_path, root_folder)
