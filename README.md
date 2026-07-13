@@ -1,8 +1,11 @@
 # Phage-induced cell perforation and lysis
-Welcome to the perforation and lysis data repository!
+Welcome to the perforation and lysis data and code repository!
 
 ## Repository structure
 This repository is split into six folders, one for analysis and five for raw data.
+Note that this is a joint code and data repository, where the full repository containing
+both code and data is stored on ScienceDB. A version containing only code is stored on github.
+The code will not run without the data stored on ScienceDB.
 
 ### analysis
 This folder contains all analysis relating to perforation and lysis. To run the analysis,
@@ -45,7 +48,7 @@ To ensure the integrity of your download, checksums are provided throughout the 
 The checksums are generated using a SHA256 hash of each file. The checksums can be verified using the script 00_verify_checksums.py.
 
 To verify your download integrity (assuming you have Python installed), simply run the command `python 00_verify_checksums.py` from a 
-terminal or Windows command prompt from the relevant folder. For example, to check your download integrity of your repository_inj_ga_tx folder, 
+terminal or Windows command prompt from the relevant folder. For example, to check your download integrity of your repository_perforation_lysis folder, 
 navigate to that folder in the terminal or command prompt window, then run `python 00_verify_checksums.py`. Note that the command may be 
 slightly different depending on the operating system (Windows may require `py 00_verify_checksums.py`, 
 while macOS may require `python3 00_verify_checksums.py`).
@@ -54,3 +57,22 @@ When the repository is first downloaded, the analysis folders will be compressed
 If the top-level script 00_verify_checksums.py runs and verifies all files correctly, then you can be confident the download has preserved 
 the original integrity of the data. If anything does not match, there is some level of corruption. Lower level checksums are provided within each 
 zipped analysis folder to allow the source of the corruption to be pinpointed. 
+
+
+## License
+The code used for this project, contained both in the main dataset on ScienceDB and separately on Github, is licensed under an MIT license
+(see LICENSE-CODE.txt). The code was developed to operate on the dataset stored on ScienceDB. The image data, metadata, tables and other data stored 
+in the dataset on ScienceDB are licensed separately under CC-BY 4.0 (see LICENSE-DATA.txt).
+
+Therefore this work consists of two components under separate licenses:
+
+Data (images, metadata, tables and other data):
+Copyright 2026 Charlie Wedd, Ruizhe Li, Temur Yunusov, Aaron Smith, Georgeos Hardo, Michael Hunter, Aparna Kaaraal Mohan, Racha Majed, Diana Fusco, Somenath Bakshi
+Licensed under CC BY 4.0 - see LICENSE-DATA.txt, https://creativecommons.org/licenses/by/4.0/
+
+Code (analysis scripts):
+Copyright 2026 Charlie Wedd, Ruizhe Li, Temur Yunusov, Aaron Smith, Georgeos Hardo, Michael Hunter, Aparna Kaaraal Mohan, Racha Majed, Diana Fusco, Somenath Bakshi
+Licensed under MIT - see LICENSE-CODE.txt
+
+Unless otherwise indicated, documentation describing the dataset, imaging methodology, and experimental design is covered under the CC BY 4.0 data
+license; documentation describing code usage, installation, and software structure is covered under the MIT code license.
