@@ -4,7 +4,7 @@ Welcome to the perforation and lysis data and code repository!
 ## Repository structure
 This repository is split into six folders, one for analysis and five for raw data.
 Note that this is a joint code and data repository, where the full repository containing
-both code and data is stored on ScienceDB. A version containing only code is stored on github.
+both code and data is stored on ScienceDB. A version containing only code is stored on Github.
 The code will not run without the data stored on ScienceDB.
 
 ### analysis
@@ -67,11 +67,11 @@ in the dataset on ScienceDB are licensed separately under CC-BY 4.0 (see LICENSE
 Therefore this work consists of two components under separate licenses:
 
 Data (images, metadata, tables and other data):
-Copyright 2026 Charlie Wedd, Ruizhe Li, Temur Yunusov, Aaron Smith, Georgeos Hardo, Michael Hunter, Aparna Kaaraal Mohan, Racha Majed, Diana Fusco, Somenath Bakshi
+Copyright 2026 Charlie Wedd, Ruizhe Li, Temur Yunusov, Aaron Smith, Georgeos Hardo, Michael Hunter, Aparna Kaaraal Mohan, Racha Majed, Diana Fusco, Somenath Bakshi. 
 Licensed under CC BY 4.0 - see LICENSE-DATA.txt, https://creativecommons.org/licenses/by/4.0/
 
 Code (analysis scripts):
-Copyright 2026 Charlie Wedd, Ruizhe Li, Temur Yunusov, Aaron Smith, Georgeos Hardo, Michael Hunter, Aparna Kaaraal Mohan, Racha Majed, Diana Fusco, Somenath Bakshi
+Copyright 2026 Charlie Wedd, Ruizhe Li, Temur Yunusov, Aaron Smith, Georgeos Hardo, Michael Hunter, Aparna Kaaraal Mohan, Racha Majed, Diana Fusco, Somenath Bakshi. 
 Licensed under MIT - see LICENSE-CODE.txt
 
 Unless otherwise indicated, documentation describing the dataset, imaging methodology, and experimental design is covered under the CC BY 4.0 data
